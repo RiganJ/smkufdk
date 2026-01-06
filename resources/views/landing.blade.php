@@ -171,7 +171,7 @@
         setTimeout(() => {
             document.getElementById("loader").classList.add("fade-out");
             setTimeout(() => {
-                window.location.href = "/";
+                window.location.href = "/home";
             }, 700);
         }, totalTime);
     </script>
