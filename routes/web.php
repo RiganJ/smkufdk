@@ -14,7 +14,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('smk.index');
 });
 Route::get('/about', function () {
@@ -134,13 +134,13 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::put('/berita/{id}', [BeritaController::class, 'update'])->name('berita.update');
     Route::delete('/berita/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');
 });
-Route::get('/landing', function () {
+Route::get('/', function () {
     return view('landing');
 });
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/profil-guru', [HomeController::class, 'profilGuru'])->name('guru.publik');
-Route::get('/', [AdminController::class, 'index'])->name('home');
+Route::get('/home', [AdminController::class, 'index'])->name('home');
 
 Route::get('/berita', [BeritaController::class, 'index'])->name('berita.index');
 Route::get('/berita/{slug}', [BeritaController::class, 'show'])->name('berita.show');
