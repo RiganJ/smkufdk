@@ -5,64 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Admin - SMK FDK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(135deg, #e3f2fd, #cfd8dc);
-            min-height: 100vh;
-            display: flex;
-            justify-content: right;
-            align-items: center;
-            font-family: 'Poppins', sans-serif;
-            padding: 20px;
-        }
+<style>
+/* ===== GLOBAL ===== */
+body {
+    background: linear-gradient(135deg, #e3f2fd, #cfd8dc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* default mobile: center */
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 16px;
+}
 
-        .login-wrapper {
-            display: flex;
-            background: #fff;
-            border-radius: 50px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            overflow: hidden;
-            max-width: 550px; /* Ubah dari 750px ke 550px */
-            width: 100%;
-        }
+/* ===== WRAPPER ===== */
+.login-wrapper {
+    display: flex;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
 
-        .login-form {
-            padding: 30px; /* Sedikit dikurangi agar proporsional */
-            flex: 1;
-        }
+/* ===== FORM ===== */
+.login-form {
+    padding: 24px;
+    width: 100%;
+}
 
-        .login-form h3 {
-            color: #0d47a1;
-            font-weight: 700;
-        }
+.login-form h3 {
+    color: #0d47a1;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
 
-        .form-control {
-            border-radius: 10px;
-        }
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 0.95rem;
+}
 
-        .btn-login {
-            background: linear-gradient(90deg, #0d47a1, #1976d2);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            transition: all 0.3s;
-        }
+/* ===== BUTTON ===== */
+.btn-login {
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
 
-        .btn-login:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(13, 71, 161, 0.3);
-        }
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 71, 161, 0.3);
+}
 
-        .login-image {
-            display: none; /* Sembunyikan gambar karena 550px sudah cukup sempit */
-        }
+/* ===== IMAGE ===== */
+.login-image {
+    display: none;
+}
 
-        @media (min-width: 768px) {
-            .login-wrapper {
-                max-width: 550px;
-            }
-        }
-    </style>
+/* ===========================
+   TABLET (≥768px)
+=========================== */
+@media (min-width: 768px) {
+    body {
+        justify-content: center;
+        padding: 24px;
+    }
+
+    .login-wrapper {
+        max-width: 480px;
+        border-radius: 32px;
+    }
+
+    .login-form {
+        padding: 32px;
+    }
+
+    .login-form h3 {
+        font-size: 1.6rem;
+    }
+}
+
+/* ===========================
+   DESKTOP (≥1024px)
+=========================== */
+@media (min-width: 1024px) {
+    body {
+        justify-content: flex-end; /* geser ke kanan */
+        padding-right: 60px;
+    }
+
+    .login-wrapper {
+        max-width: 550px;
+    }
+
+    .login-form {
+        padding: 36px;
+    }
+}
+</style>
 </head>
 <body>
 
