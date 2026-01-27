@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading.....</title>
+    <meta name="google-site-verification" content="wlCZaw2lXS8IL8gBU8c0Z886kxiQnR1--BBUQnOMFYs" />
+    <meta name="description" content="Official website of SMK Fort De Kock Bukit Tinggi, offering information about our institution, programs, and mascot.">
+    <meta name="keywords" content="SMK Fort De Kock, Bukit Tinggi, School, Education">
+    <meta name="author" content="SMK Fort De Kock">
+    <noscript>
+  <p>SMK Fort De Kock Bukit Tinggi - Welcome to our official website, learn about our programs and mascot!</p>
+</noscript>
+
+    <title>SMK Fort De Kock Bukit Tinggi</title>
     <link rel="icon" href="{{ asset('img/maskott2.png') }}">
 
     <!-- FONT POPPINS PREMIUM -->
